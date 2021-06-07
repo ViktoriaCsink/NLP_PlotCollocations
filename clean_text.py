@@ -6,9 +6,6 @@ These functions will achieve corpus-specific test cleaning
 @author: Viktoria
 """
 
-
-#First lemmatize the text.
-
 import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
@@ -16,7 +13,7 @@ from nltk.corpus import stopwords
 import re
 
 
-
+#First lemmatize the text.
 
 def lemmatize(content_as_words):
     
@@ -43,7 +40,7 @@ def lemmatize(content_as_words):
 #Now apply a general text cleaning function that considers the specific properties of the corpus, 
 #ie. corpus-sepcific stop words, etc. 
 
-def clean_text(content):
+def clean_text(content, useless, informative):
     
     #initial text cleaning
     if type(content) == bytes:
