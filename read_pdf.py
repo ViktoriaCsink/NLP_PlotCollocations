@@ -3,6 +3,9 @@
 This function processes text from pdf files. 
 Scanned pdfs are also supported.
 
+@author: Viktoria
+April, 2021
+
 """
 
 #process pdfs if they are already downloaded into a folder
